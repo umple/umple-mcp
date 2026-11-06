@@ -1,7 +1,5 @@
 # umple-mcp
 
-This repo is temporary: it will move to [umple/umple-mcp](https://github.com/umple/umple-mcp) once that repo is created in the Umple organization.
-
 An MCP (Model Context Protocol) server for [Umple](https://www.umple.org).
 It lets AI tools such as Claude Code, Cursor and VS Code use Umple directly.
 
@@ -22,6 +20,8 @@ AI tools start the server with only a few environment variables, so pass `UMPLES
     claude mcp add umple-mcp -e UMPLESYNC_JAR=$HOME/umple/dist/umplesync.jar -- node /path/to/umple-mcp/build/index.js
 
 ## Install and build
+    git clone https://github.com/umple/umple-mcp.git
+    cd umple-mcp
     npm install
     npm run build
 

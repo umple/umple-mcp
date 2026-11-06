@@ -1,7 +1,7 @@
 {
   "name": "umple-mcp",
   "version": "0.1.0",
-  "description": "",
+  "description": "MCP server that lets AI tools check and generate Umple",
   "type": "module",
   "bin": {
     "umple-mcp": "./build/index.js"
@@ -19,7 +19,17 @@
     "test": "npm run build && node --test test/*.test.mjs",
     "inspect": "npm run build && npx @modelcontextprotocol/inspector -e UMPLESYNC_JAR=$UMPLESYNC_JAR node build/index.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umple/umple-mcp.git"
+  },
+  "homepage": "https://github.com/umple/umple-mcp#readme",
+  "keywords": [
+    "umple",
+    "mcp",
+    "model-context-protocol",
+    "uml"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
